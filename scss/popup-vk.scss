@@ -40,7 +40,7 @@
   &::after {
     position: absolute;
     content: "";
-    width: 90%;
+    width: 100%;
     height: 2px;
     top: 22%;
     left: 50%;
@@ -49,7 +49,7 @@
   }
   & input {
     height: 55px;
-    width: 90%;
+    width: 100%;
     border: none;
     padding-left: 10px;
     font-weight: 400;
@@ -86,7 +86,7 @@
 .btn__forget {
   position: absolute;
   top: 69px;
-  right: 35px;
+  right: 5%;
   & i {
     font-size: 26px;
     color: #989ba2;
@@ -124,7 +124,7 @@
   }
 }
 .vk__submit {
-  width: 90%;
+  width: 100%;
   background-color: #4a82bf;
   border: none;
   border-radius: 10px;
@@ -277,7 +277,13 @@
   color: white;
   margin-top: 10px;
   margin-bottom: 40px;
+  &:hover {
+    color: white;
+  }
   @include sm {
     color: #2a5885;
+    &:hover {
+      color: #2a5885;
+    }
   }
 }
