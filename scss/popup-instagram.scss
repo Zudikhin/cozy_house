@@ -192,6 +192,24 @@
   & p {
     font-size: 14px;
   }
+  & .store__links {
+    display: flex;
+    & a {
+      &:first-child {
+        width: 140px;
+        height: 40px;
+      }
+      &:last-child {
+        width: 140px;
+        transform: translateY(-8px);
+        height: 58px;
+      }
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 .insta__close {
