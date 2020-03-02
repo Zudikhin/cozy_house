@@ -1,0 +1,56 @@
+.title {
+  font-size: 30px;
+  font-family: "Georgia";
+  color: #545454;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  @include sm {
+    & {
+      & img {
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+  @include md {
+    flex-direction: row;
+  }
+  @include lg {
+    justify-content: space-around;
+    & {
+      & img {
+        width: 300px;
+      }
+    }
+  }
+}
+.about__text {
+  margin-top: 30px;
+  & p {
+    font-size: 15px;
+    font-family: "Arial";
+    color: #4c4c4c;
+    text-align: center;
+    margin-top: 30px;
+  }
+  @include sm {
+    margin-top: 50px;
+  }
+  @include md {
+    margin-left: 50px;
+    & h3 {
+      text-align: left;
+    }
+    & p {
+      text-align: left;
+    }
+  }
+  @include lg {
+    width: 50%;
+  }
+}

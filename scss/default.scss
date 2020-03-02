@@ -1,0 +1,56 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+input:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+.text {
+  font-family: "Arial";
+  font-size: 15px;
+}
+.title {
+  font-family: "Georgia";
+  font-size: 35px;
+}
+.btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  & a {
+    font-family: "Georgia";
+    color: black;
+    font-size: 15px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  @include sm {
+    width: 204px;
+    height: 52px;
+    border-radius: 30px;
+    & a {
+      font-size: 17px;
+    }
+  }
+}
+
+body.notouch {
+  touch-action: none;
+}

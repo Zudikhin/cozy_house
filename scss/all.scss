@@ -1,0 +1,95 @@
+.all {
+  background-color: #f6f6f6;
+}
+.all__slider {
+  & .all__title {
+    margin-top: 100px;
+  }
+  & .btn-all {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #f1cdb3;
+  }
+  @include md {
+    display: none;
+  }
+}
+.all__block {
+  display: none;
+  @include md {
+    display: flex;
+    & .all__title {
+      margin-top: 130px;
+    }
+    & .friends__item {
+      margin-top: 50px;
+      & a {
+        border: 2px solid #f1cdb3;
+        width: 184px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        margin-top: 10px;
+        position: relative;
+        & span {
+          font-family: "Georgia";
+          font-size: 17px;
+          color: black;
+          letter-spacing: 2px;
+          z-index: 1;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 100%;
+          left: 0;
+          right: auto;
+          top: 0;
+          z-index: 0;
+          background-color: transparent;
+          transition: all 300ms ease;
+        }
+        &:hover {
+          &:after {
+            width: 100%;
+            background: #f1cdb3;
+            transition: all 300ms ease;
+          }
+        }
+      }
+    }
+  }
+}
+.all__pagination {
+  text-align: center;
+  margin: 50px 0px;
+  & button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    border: 2px solid #f1cdb3;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    margin: 0px 5px;
+    &.active {
+      background-color: #f1cdb3;
+    }
+    & a {
+      color: black;
+      font-size: 20px;
+    }
+    &:hover {
+      background-color: #f1cdb3;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
