@@ -219,23 +219,4 @@ $(document).ready(function() {
     $(".all__pagination button").removeClass("active");
     $(this).addClass("active");
   });
-
-  $(".all__modal").click(function(e) {
-    e.preventDefault();
-    $(".animal").css("display", "block");
-    $("body").css("overflow-y", "hidden");
-    $("body").addClass("notouch");
-  });
-
-  $(".animal__back").click(function() {
-    $(".animal").css("display", "none");
-    $("body").css("overflow-y", "auto");
-    $("body").removeClass("notouch");
-  });
-
-  $(".animal__close").click(function() {
-    $(".animal").css("display", "none");
-    $("body").css("overflow-y", "auto");
-    $("body").removeClass("notouch");
-  });
 });

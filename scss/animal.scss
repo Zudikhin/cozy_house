@@ -1,141 +1,74 @@
 .animal {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: white;
-  z-index: 9;
-  &__close {
-    display: none;
-  }
-  &__back {
-    position: absolute;
-    top: -30px;
-    left: 0px;
-    border: none;
-    background-color: transparent;
-    color: black;
-    & i {
-      padding-right: 10px;
+  margin: 70px 0px 0px 0px;
+  padding-bottom: 50px;
+  background-color: #f6f6f6;
+  &__img {
+    width: 100%;
+    & img {
+      width: 100%;
     }
   }
-  &__content {
-    width: 80%;
-    margin: 0px auto;
-    margin-top: 50px;
-    position: relative;
-    & .img {
-      & img {
-        width: 100%;
+  & .collection {
+    & .animal__img {
+      margin-top: 20px;
+    }
+  }
+  &__main {
+    margin-top: 10px;
+    & .back {
+      color: black;
+      margin-bottom: 15px;
+      display: block;
+      font-size: 20px;
+      & i {
+        margin-right: 10px;
+      }
+      &:hover {
+        color: black;
       }
     }
   }
   & .desc {
-    & h3 {
-      color: #545454;
-      font-size: 20px;
-      margin-top: 10px;
-      font-family: "Georgia";
-    }
-    & p {
-      margin-top: 10px;
-      color: #4c4c4c;
-      font-size: 12px;
-      font-family: "Arial";
-    }
     & ul {
+      margin-top: 20px;
       & li {
-        color: #545454;
-        font-size: 14px;
         position: relative;
-        padding-left: 20px;
+        padding-left: 15px;
         font-family: "Arial";
+        font-size: 15px;
+        color: #545454;
         &:before {
           content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
           width: 5px;
           height: 5px;
           background-color: #f1cdb3;
           border-radius: 50%;
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translateY(-50%);
         }
       }
     }
-  }
-  @include sm {
-    & .desc {
-      & h3 {
-        font-size: 25px;
-      }
-      & p {
-        font-size: 15px;
-      }
-      & ul {
-        & li {
-          font-size: 15px;
-        }
-      }
+    & p {
+      font-family: "Arial";
+      font-size: 15px;
+      color: #4c4c4c;
+      margin-top: 20px;
     }
-  }
-  @include md {
-    background-color: rgba(0, 0, 0, 0.4);
-    &__content {
-      display: flex;
-      width: 90%;
-      background-color: white;
-      margin-top: 150px;
-      border: 2px solid black;
-      & .img {
-        & img {
-          padding-top: 20px;
-          padding-left: 20px;
-        }
-      }
-    }
-    &__back {
-      display: none;
-    }
-    &__close {
-      display: block;
-      position: absolute;
-      background-color: transparent;
-      border: 2px solid #f1cdb3;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      position: absolute;
-      top: -50px;
-      right: 0;
-      & i {
-        color: black;
-      }
-    }
-    & .desc {
-      width: 100%;
-      padding: 20px;
-      & h3 {
-        margin-top: 0px;
-      }
+    & h3 {
+      font-family: "Georgia";
+      font-size: 35px;
+      color: #545454;
+      margin-top: 20px;
     }
   }
   @include lg {
-    & .desc {
-      & h3 {
-        font-size: 35px;
+    &__main {
+      margin-top: 25px;
+      & .back {
+        margin-bottom: 25px;
       }
-    }
-  }
-  @include xl {
-    &__content {
-      width: 80%;
-      padding: 30px 50px 50px 50px;
-    }
-    &__close {
-      right: -30px;
     }
   }
 }
