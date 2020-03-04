@@ -243,6 +243,10 @@
   margin-top: 15px;
   margin: 0 auto;
   display: block;
+  line-height: 50px;
+  &:hover {
+    color: white;
+  }
   & i {
     margin: 0px 20px;
     font-size: 18px;

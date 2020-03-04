@@ -16,14 +16,6 @@ $(document).ready(function() {
     }
   });
 
-  $(".header__social.instagram").click(function() {
-    $(".popup__instagram").addClass("active");
-  });
-
-  $(".header__social.vk").click(function() {
-    $(".popup__vk").addClass("active");
-  });
-
   $(".content__input").each(function(i, elem) {
     $(elem).focusin(function() {
       $(this).css("border", "1px solid #b2b2b2");
