@@ -85,6 +85,9 @@
     margin: 0 auto;
     margin-top: 10px;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .insta__submit {

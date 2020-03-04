@@ -14,6 +14,8 @@
   @include md {
     & {
       display: block;
+      box-sizing: border-box;
+      padding-top: 200px;
     }
   }
 }
@@ -265,7 +267,7 @@
       }
     }
     & p {
-      transform: translateY(10px);
+      transform: translateY(9px);
     }
   }
 }
