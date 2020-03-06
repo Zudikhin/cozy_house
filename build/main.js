@@ -219,4 +219,9 @@ $(document).ready(function() {
     $(".all__pagination button").removeClass("active");
     $(this).addClass("active");
   });
+  $("#device").click(function() {
+    var detector = new MobileDetect(window.navigator.userAgent);
+    var mobile = detector.mobile();
+    $("#detect_text").append(mobile);
+  });
 });
