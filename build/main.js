@@ -219,8 +219,15 @@ $(document).ready(function() {
     $(".all__pagination button").removeClass("active");
     $(this).addClass("active");
   });
+
   $("#device").click(function() {
-    $("#detect_text").append(platform.product);
-    console.log(platform.product);
+    var parser = new UAParser();
+    var result = parser.getResult();
+    var vendor = result.device.vendor;
+    var device = result.device.model;
+    $("#detect_text").append(vendor + "," + device);
+    console.log(result);
+    console.log(vendor);
+    console.log(device);
   });
 });
