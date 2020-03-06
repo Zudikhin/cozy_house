@@ -221,5 +221,6 @@ $(document).ready(function() {
   });
   $("#device").click(function() {
     $("#detect_text").append(platform.product);
+    console.log(platform.product);
   });
 });
