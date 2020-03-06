@@ -220,8 +220,6 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
   $("#device").click(function() {
-    var detector = new MobileDetect(window.navigator.userAgent);
-    var mobile = detector.mobile();
-    $("#detect_text").append(mobile);
+    $("#detect_text").append(platform.product);
   });
 });
